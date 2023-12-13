@@ -20,8 +20,15 @@
       height: 240px;
       display: flex;
       flex-direction: column;
-      // overflow: scroll;
+      overflow:scroll;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
+
+    .cart-items::-webkit-scrollbar {
+      display: none;
+    }
+    
   
     button {
       margin-top: auto;
